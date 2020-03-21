@@ -1,6 +1,7 @@
 import React from 'react'
 import { Layout, Menu } from 'antd'
 import { TeamOutlined } from '@ant-design/icons'
+import Home from './pages/Home'
 import './App.less'
 
 const { Header, Footer, Content } = Layout
@@ -9,7 +10,7 @@ const App = () => (
   <Layout>
     <Header className='App-header'>
         <div className='App-logo'>
-          <a href='#' title='Wir für Uns'>
+          <a href='http://loclahost/' title='Wir für Uns'>
           <TeamOutlined style={{marginRight: '12px'}} />
           Wir für Uns
           </a>
@@ -27,10 +28,10 @@ const App = () => (
     </Header>
     <Content className='App-content-wrapper'>
       <div className='App-content'>
-        Content
+        <Home />
       </div>
     </Content>
-    <Footer className='App-footer'>Wir für Uns {new Date().getFullYear()}</Footer>
+    <Footer className='App-footer'>Wir für Uns © {new Date().getFullYear()}</Footer>
   </Layout>
 )
 
