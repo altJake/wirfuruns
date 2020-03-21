@@ -1,26 +1,26 @@
 {
   "files": {
-    "main.css": "/static/css/main.c20b08d0.chunk.css",
-    "main.js": "/static/js/main.ce75da57.chunk.js",
-    "main.js.map": "/static/js/main.ce75da57.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.2ed3bfca.js",
-    "runtime-main.js.map": "/static/js/runtime-main.2ed3bfca.js.map",
-    "static/css/2.3a479ec5.chunk.css": "/static/css/2.3a479ec5.chunk.css",
-    "static/js/2.fc6d6b4c.chunk.js": "/static/js/2.fc6d6b4c.chunk.js",
-    "static/js/2.fc6d6b4c.chunk.js.map": "/static/js/2.fc6d6b4c.chunk.js.map",
-    "index.html": "/index.html",
-    "precache-manifest.f4df907726705c82bd5e96a326927f1c.js": "/precache-manifest.f4df907726705c82bd5e96a326927f1c.js",
-    "service-worker.js": "/service-worker.js",
-    "static/css/2.3a479ec5.chunk.css.map": "/static/css/2.3a479ec5.chunk.css.map",
-    "static/css/main.c20b08d0.chunk.css.map": "/static/css/main.c20b08d0.chunk.css.map",
-    "static/js/2.fc6d6b4c.chunk.js.LICENSE.txt": "/static/js/2.fc6d6b4c.chunk.js.LICENSE.txt",
-    "static/media/beispielbild.png": "/static/media/beispielbild.f894d62b.png"
+    "main.css": "/wirfuruns/static/css/main.c20b08d0.chunk.css",
+    "main.js": "/wirfuruns/static/js/main.2e240427.chunk.js",
+    "main.js.map": "/wirfuruns/static/js/main.2e240427.chunk.js.map",
+    "runtime-main.js": "/wirfuruns/static/js/runtime-main.46b6a73f.js",
+    "runtime-main.js.map": "/wirfuruns/static/js/runtime-main.46b6a73f.js.map",
+    "static/css/2.3a479ec5.chunk.css": "/wirfuruns/static/css/2.3a479ec5.chunk.css",
+    "static/js/2.43095898.chunk.js": "/wirfuruns/static/js/2.43095898.chunk.js",
+    "static/js/2.43095898.chunk.js.map": "/wirfuruns/static/js/2.43095898.chunk.js.map",
+    "index.html": "/wirfuruns/index.html",
+    "precache-manifest.d9875088dc91ee3cd4126efa5c6d312d.js": "/wirfuruns/precache-manifest.d9875088dc91ee3cd4126efa5c6d312d.js",
+    "service-worker.js": "/wirfuruns/service-worker.js",
+    "static/css/2.3a479ec5.chunk.css.map": "/wirfuruns/static/css/2.3a479ec5.chunk.css.map",
+    "static/css/main.c20b08d0.chunk.css.map": "/wirfuruns/static/css/main.c20b08d0.chunk.css.map",
+    "static/js/2.43095898.chunk.js.LICENSE.txt": "/wirfuruns/static/js/2.43095898.chunk.js.LICENSE.txt",
+    "static/media/beispielbild.png": "/wirfuruns/static/media/beispielbild.f894d62b.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.2ed3bfca.js",
+    "static/js/runtime-main.46b6a73f.js",
     "static/css/2.3a479ec5.chunk.css",
-    "static/js/2.fc6d6b4c.chunk.js",
+    "static/js/2.43095898.chunk.js",
     "static/css/main.c20b08d0.chunk.css",
-    "static/js/main.ce75da57.chunk.js"
+    "static/js/main.2e240427.chunk.js"
   ]
 }
