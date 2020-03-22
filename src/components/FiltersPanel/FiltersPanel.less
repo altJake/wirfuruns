@@ -15,3 +15,67 @@
     margin-right: @padding-xs;
   }
 }
+
+.type-selector {
+  display: flex;
+  justify-content: space-around;
+  & .ant-checkbox-wrapper {
+    & .ant-checkbox-inner {
+      display: none;
+    }
+  }
+
+  .icon-checkbox > span {
+    color: black;
+    display: flex;
+    flex-direction: column;;
+  }
+}
+
+.ant-checkbox-checked {
+  + span > .anticon {
+    fill: @primary-color;
+  }
+  
+  &::after {  // disable animation
+    border: 0;
+  }
+}
+
+.physical-rate {
+  color: @primary-color;
+  & .ant-rate-star-full {
+    fill: @primary-color;
+  }
+}
+
+.special-knowledge {
+  color: @primary-color;
+
+  .ant-tag-checkable {
+    border: 2px @black solid;
+    border-radius: @padding-sm;
+    margin: @padding-xs;
+    font-size: 16px;
+
+    &:hover {
+      border-color: @primary-color;
+    }
+
+    &.ant-tag-checkable-checked {
+      background-color: inherit;
+      color: @primary-color;
+      border-color: @primary-color;
+    }
+  }
+}
+
+.action-buttons {
+  & button {
+    margin: 0 @padding-xs;
+  }
+  & .ant-form-item-control-input-content {
+    display: flex;
+    justify-content: flex-end;
+  }
+}

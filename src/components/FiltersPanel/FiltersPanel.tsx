@@ -1,10 +1,21 @@
-import { DatePicker, Form, Input, Select, Divider } from 'antd'
+import { DatePicker, Form, Input, Select, Divider, Checkbox, Rate, Tag, Button } from 'antd'
 import React from 'react'
-import { CompassIcon, CalendarWithStopperIcon } from '../Icons'
+import {
+  CompassIcon,
+  CalendarWithStopperIcon,
+  OnlineIcon,
+  DonationIcon,
+  LocationIcon,
+  WheelbarrowIcon,
+  CogwheelHeadIcon,
+  StartPlusIcon
+} from '../Icons'
 import './FiltersPanel.less'
+import { TagProps } from 'antd/lib/tag'
 
 const { RangePicker } = DatePicker
 const { Option } = Select
+const { CheckableTag } = Tag
 
 const LabelWithIcon: React.FC<{
   icon: React.ComponentType<any>,
@@ -16,17 +27,26 @@ const LabelWithIcon: React.FC<{
   </span>
 )
 
+const SelectableTag: React.FC<TagProps> = props => {
+  const [checked, setChecked] = React.useState(false)
+  const handleChange = (newChecked: boolean) => {
+    setChecked(newChecked)
+  }
+
+  return (
+    <CheckableTag
+    {...props} checked={checked} onChange={handleChange} />
+  )
+}
+
 const FiltersPanel: React.FC<{ onChange?: (filters: any) => void }> = props => {
   const { onChange = () => {} } = props
   const [form] = Form.useForm()
 
   return <div className='filters-pane'>
     <Form
-      labelCol={{ span: 7 }}
-      wrapperCol={{ span: 17 }}
       labelAlign='left'
       form={form}
-      onValuesChange={(_: any, values: any) => onChange(values)}
     >
       <Form.Item
         name='plz'
@@ -45,13 +65,82 @@ const FiltersPanel: React.FC<{ onChange?: (filters: any) => void }> = props => {
       </Form.Item>
       <Divider />
       <Form.Item
-        name='zeitraum'
+        name='timerange'
         label={<LabelWithIcon icon={CalendarWithStopperIcon} label='Zeitraum' />}
         rules={[{ type: 'array' }]}
       >
         <RangePicker />
       </Form.Item>
       <Divider />
+      <Form.Item
+        name='types'
+        className='type-selector-item'
+        rules={[{ type: 'array' }]}
+      >
+        <Checkbox.Group className='type-selector'>
+          <Checkbox value='in_location' className='icon-checkbox'>
+            <LocationIcon />
+            <span>Vor Ort</span>
+          </Checkbox>
+          <Checkbox value='online' className='icon-checkbox'>
+            <OnlineIcon />
+            <span>Online</span>
+          </Checkbox>
+          <Checkbox value='donation' className='icon-checkbox'>
+            <DonationIcon/>
+            <span>Spende</span>
+          </Checkbox>
+        </Checkbox.Group>
+      </Form.Item>
+      <Divider />
+      <Form.Item
+        name='physical_intensity'
+        className='physical-rate'
+      >
+        <label htmlFor='physical_intensity'>Körperliche Anstrengung:</label><br />
+        <Rate character={<WheelbarrowIcon />} />
+      </Form.Item>
+      <Divider />
+      <Form.Item
+        name='special_knowledge'
+        className='special-knowledge'
+        rules={[{ type: 'array' }]}
+      >        
+        <div style={{display: 'flex', flexDirection: 'column', marginLeft: '8px'}}>
+          <span>
+            <CogwheelHeadIcon style={{fill: '#a2dbd3', marginRight: '8px'}} />
+            <label htmlFor='special_knowledge'>Besondere Kenntnisse in:</label>
+          </span>
+          <div style={{padding: '2px'}}>
+            {['IT','Rechtskenntnisse','Design','Sprachen'].map(k => <SelectableTag key={k}>{k}</SelectableTag>)}
+          </div>
+        </div>
+      </Form.Item>
+      <Divider />
+      <Form.Item
+        name='special_interests'
+        className='special-knowledge'
+        rules={[{ type: 'array' }]}
+      >        
+        <div style={{display: 'flex', flexDirection: 'column', marginLeft: '8px'}}>
+          <span>
+            <StartPlusIcon style={{fill: '#a2dbd3', marginRight: '8px'}} />
+            <label htmlFor='special_interests'>Besonderes Interessen an:</label>
+          </span>
+          <div style={{padding: '2px'}}>
+            {['Obdachlose','Covid-19','Kinder + Jugendliche','Umwelt + Tiere', 'Senioren', 'Vielfalt', 'Geflüchtete', 
+          'Menschen mit Behinderung'].map(k => <SelectableTag key={k}>{k}</SelectableTag>)}
+          </div>
+        </div>
+      </Form.Item>
+      <Form.Item className='action-buttons'>
+        <Button type="primary" htmlType="submit" onClick={onChange}>
+          Filter anwenden
+        </Button>
+        <Button htmlType="button" onClick={() => onChange(true)}>
+          Zurücksetzen
+        </Button>
+      </Form.Item>
     </Form>
   </div>
 }
