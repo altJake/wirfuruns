@@ -16,13 +16,12 @@ const App = () => (
           </a>
         </div>
       <Menu
-        theme='dark'
         className='App-header-menu'
         mode='horizontal'
         defaultSelectedKeys={['home']}
       >
-        <Menu.Item key='home'>Home</Menu.Item>
-        <Menu.Item key='helper'>Wo kann ich Helfen</Menu.Item>
+        <Menu.Item key='home'>Aktiv Werden</Menu.Item>
+        <Menu.Item key='helper'>Inspiration</Menu.Item>
         <Menu.Item key='about'>Über Uns</Menu.Item>
       </Menu>
     </Header>

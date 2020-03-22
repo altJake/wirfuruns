@@ -11,7 +11,7 @@ const { Meta } = Card
 const Home = () => (
   <Row gutter={24}>
     <Col span={6}>
-      <Card style={{ backgroundColor: '#bbb' }}>
+      <Card className='filters-pane'>
         <Form labelCol={{ span: 7 }} wrapperCol={{ span: 17 }} labelAlign='left'>
           <Form.Item label='Umkreis' name='plz'>
             <Input.Group compact>
@@ -35,11 +35,12 @@ const Home = () => (
         </Form>
       </Card>
     </Col>
-    <Col span={18} style={{ background: '#ddd', padding: '24px' }}>
-      <Card>
-        Tip of the Day / Motivation
+    <Col className='main-area' span={18}>
+      <Card className='tip-of-the-day'>
+        Zusammenhalt, das gilt bei uns nicht nur in Krisenzeiten - <br />
+        Das gilt jetz, morgen und über alle Grenzen hinweg
       </Card>
-      <div style={{ paddingTop: '24px' }}>
+      <div className='results-container'>
         <Row gutter={[48, 32]}>
           <Col span={8}>
             <Card cover={
@@ -49,7 +50,7 @@ const Home = () => (
               />
             }>
               <Meta
-                title='NACHBARSCHAFTSHILFE'
+                title={<span className='meta-title'>NACHBARSCHAFTSHILFE</span>}
                 description='Hilf Oma und Opa'
               />
             </Card>
@@ -62,7 +63,7 @@ const Home = () => (
               />
             }>
               <Meta
-                title='NACHBARSCHAFTSHILFE'
+                title={<span className='meta-title'>NACHBARSCHAFTSHILFE</span>}
                 description='Hilf Oma und Opa'
               />
             </Card>
@@ -75,7 +76,7 @@ const Home = () => (
               />
             }>
               <Meta
-                title='NACHBARSCHAFTSHILFE'
+                title={<span className='meta-title'>NACHBARSCHAFTSHILFE</span>}
                 description='Hilf Oma und Opa'
               />
             </Card>
@@ -90,7 +91,7 @@ const Home = () => (
               />
             }>
               <Meta
-                title='NACHBARSCHAFTSHILFE'
+                title={<span className='meta-title'>NACHBARSCHAFTSHILFE</span>}
                 description='Hilf Oma und Opa'
               />
             </Card>
@@ -103,7 +104,7 @@ const Home = () => (
               />
             }>
               <Meta
-                title='NACHBARSCHAFTSHILFE'
+                title={<span className='meta-title'>NACHBARSCHAFTSHILFE</span>}
                 description='Hilf Oma und Opa'
               />
             </Card>
@@ -116,7 +117,7 @@ const Home = () => (
               />
             }>
               <Meta
-                title='NACHBARSCHAFTSHILFE'
+                title={<span className='meta-title'>NACHBARSCHAFTSHILFE</span>}
                 description='Hilf Oma und Opa'
               />
             </Card>

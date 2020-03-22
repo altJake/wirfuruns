@@ -1,3 +1,4 @@
+const path = require('path')
 const { override, fixBabelImports, addLessLoader } = require('customize-cra')
 
 module.exports = override(
@@ -9,8 +10,8 @@ module.exports = override(
   addLessLoader({
     javascriptEnabled: true,
     modifyVars: {
-      '@primary-color': '#90c6b9',
-      '@layout-header-background': 'darken(@primary-color, 20%)'
+      hack: `true; @import "${path.resolve(
+        __dirname, 'src/theme.less')}"`
     },
   }),
 )

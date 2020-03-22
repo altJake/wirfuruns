@@ -1,3 +1,5 @@
+@import '../../theme.less';
+
 .more-filters-collapse {
   background-color: inherit;
 
@@ -5,3 +7,39 @@
     border: 0;
   }
 }
+
+.main-area {
+  padding: @padding-lg;
+  background-color: @primary-color;
+}
+
+.filters-pane {
+  background-color: @primary-variant-color;
+  font-weight: 600;
+
+  label, .ant-collapse > .ant-collapse-item > .ant-collapse-header { 
+    color: @primary-color;
+  }
+}
+
+.tip-of-the-day {
+  font-weight: 600;
+  font-size: @heading-4-size;
+  line-height: (@line-height-base * 0.75);
+  color: @primary-variant-color;
+  text-transform: uppercase;
+
+  .ant-card-body {
+    padding: @padding-sm;
+  }
+}
+
+.results-container {
+  margin-top: @padding-md;
+}
+
+.meta-title {
+  color: @primary-variant-color;
+}
+
+
