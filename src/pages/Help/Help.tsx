@@ -1,10 +1,10 @@
 import React from 'react'
-import { Card } from 'antd'
 import './Help.less'
 
-
 const Help = () => (
-  <Card title='Hilfe Suchen' />
+  <div className='help-page'>
+    <h1 className='title'>Hilfe Suchen</h1>
+  </div>
 )
 
 export default Help

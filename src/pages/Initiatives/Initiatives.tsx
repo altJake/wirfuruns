@@ -1,10 +1,10 @@
 import React from 'react'
-import { Card } from 'antd'
 import './Initiatives.less'
 
-
 const Initiatives = () => (
-  <Card title='Alle Initiativen' />
+  <div className='initiatives-page'>
+    <h1 className='title'>Initiativen</h1>
+  </div>
 )
 
 export default Initiatives
