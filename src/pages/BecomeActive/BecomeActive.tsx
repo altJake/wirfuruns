@@ -1,4 +1,4 @@
-import { Col, Row } from 'antd'
+import { Col, Row, Affix } from 'antd'
 import React from 'react'
 import ResultsList from '../../components/ResultsList'
 import FiltersPanel from '../../components/FiltersPanel'
@@ -39,7 +39,9 @@ const BecomeActive = () => {
   return (
     <Row gutter={24}>
       <Col span={6}>
+      <Affix offsetTop={110}>
         <FiltersPanel onChange={fakeSomeMagic} />
+      </Affix>
       </Col>
       <Col span={18}>
         <ResultsList loading={loading} results={results} />
