@@ -38,8 +38,32 @@
   margin-top: @padding-md;
 }
 
-.meta-title {
-  color: @primary-variant-color;
-}
+.result-card {
+  height: 24rem;
+  background-color: @primary-color;
+  border-radius: 0;
 
+  .ant-card-cover {
+    height: 13rem;
+    overflow: hidden;
+
+    > img {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+
+  .ant-card-body {
+    padding: @padding-xs;
+  }
+
+  & .result-title {
+    color: @white;
+  }
+
+  & .result-secondary-title {
+    color: @primary-variant-color;
+  }
+}
 
