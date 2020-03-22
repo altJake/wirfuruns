@@ -2,7 +2,7 @@ import Button, { ButtonProps } from 'antd/lib/button'
 import React from 'react'
 import './SecondaryButton.less'
 
-const SecondaryButton: React.FC<ButtonProps> = ({
+const SecondaryButton: React.FC<Omit<ButtonProps, 'type'>> = ({
   className,
   children,
   ...props

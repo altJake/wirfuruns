@@ -1,17 +1,9 @@
-import { DatePicker, Form, Input, Select, Divider, Checkbox, Rate, Tag, Button } from 'antd'
-import React from 'react'
-import {
-  CompassIcon,
-  CalendarWithStopperIcon,
-  OnlineIcon,
-  DonationIcon,
-  LocationIcon,
-  WheelbarrowIcon,
-  CogwheelHeadIcon,
-  StartPlusIcon
-} from '../Icons'
-import './FiltersPanel.less'
+import { Button, Checkbox, DatePicker, Divider, Form, Input, Rate, Select, Tag } from 'antd'
 import { TagProps } from 'antd/lib/tag'
+import React from 'react'
+import SecondaryButton from '../../components/SecondaryButton'
+import { CalendarWithStopperIcon, CogwheelHeadIcon, CompassIcon, DonationIcon, LocationIcon, OnlineIcon, StartPlusIcon, WheelbarrowIcon } from '../Icons'
+import './FiltersPanel.less'
 
 const { RangePicker } = DatePicker
 const { Option } = Select
@@ -134,10 +126,10 @@ const FiltersPanel: React.FC<{ onChange?: (filters: any) => void }> = props => {
         </div>
       </Form.Item>
       <Form.Item className='action-buttons'>
-        <Button type="primary" htmlType="submit" onClick={onChange}>
+        <SecondaryButton className='apply-button' htmlType='submit' onClick={onChange}>
           Filter anwenden
-        </Button>
-        <Button htmlType="button" onClick={() => onChange(true)}>
+        </SecondaryButton>
+        <Button className='reset-button' type='primary' htmlType='button' onClick={() => onChange(true)}>
           Zurücksetzen
         </Button>
       </Form.Item>
