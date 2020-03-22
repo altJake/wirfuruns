@@ -11,14 +11,14 @@ import Inspiration from './pages/Inspiration'
 const { Header, Footer, Content } = Layout
 
 const App = () => {
-  const [selectedKeys, setSelectedKeys] = React.useState<string[]>([])
+  const [selectedKeys, setSelectedKeys] = React.useState<string[]>()
 
   return (
-    <Router>
+    <Router basename='wirfuruns'>
       <Layout className='App-wrapper'>
         <Header className='App-header'>
           <div className='App-logo'>
-            <Link to='/' onClick={() => setSelectedKeys([])}>
+            <Link to='/' onClick={() => setSelectedKeys(void 0)}>
               <TeamOutlined style={{ marginRight: '12px' }} />
             Wir für Uns
           </Link>
@@ -36,7 +36,7 @@ const App = () => {
         </Header>
         <Content className='App-content-wrapper'>
           <div className='App-content'>
-            <Route exact path='/' component={Home} />
+            <Route exact default path='/' component={Home} />
             <Route exact path='/aktiv_werden' component={BecomeActive} />
             <Route exact path='/inspiration' component={Inspiration} />
             <Route exact path='/uber_uns' component={About} />
