@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "c0ce98d60c2a231d97daf486e93dc4f7",
+    "revision": "1e66084bbaad95366bb783f394d7d4ba",
     "url": "/wirfuruns/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/wirfuruns/static/css/2.336bbfd8.chunk.css"
   },
   {
-    "revision": "de13902a7ecdcc36bae5",
+    "revision": "b9ca13a3ccb7ec3dfb0c",
     "url": "/wirfuruns/static/css/main.99e8525e.chunk.css"
   },
   {
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/wirfuruns/static/js/2.c430855a.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "de13902a7ecdcc36bae5",
-    "url": "/wirfuruns/static/js/main.7325e208.chunk.js"
+    "revision": "b9ca13a3ccb7ec3dfb0c",
+    "url": "/wirfuruns/static/js/main.fcd5e702.chunk.js"
   },
   {
     "revision": "265956bd4a2af38409b7",
