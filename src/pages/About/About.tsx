@@ -1,6 +1,6 @@
-import { Button } from 'antd'
 import React from 'react'
 import { Link } from 'react-router-dom'
+import SecondaryButton from '../../components/SecondaryButton'
 import './About.less'
 
 
@@ -33,9 +33,9 @@ const About = () => (
       Wir zeigen dir, wie du dich einbringst - <span className='highlight'>im Großen, oder mit ganz kleinen Dingen</span>. Eben genau so wie es am besten zu dir und deinen Bedürfnissen passt.
     </p>
 
-    <Button className='button-link' size='large'>
+    <SecondaryButton className='link-button' size='large'>
       <Link to='/aktiv_werden'>Finde Dein Projekt</Link>
-    </Button>
+    </SecondaryButton>
   </div>
 )
 
