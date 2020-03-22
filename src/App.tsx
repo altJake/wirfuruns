@@ -1,4 +1,3 @@
-import { TeamOutlined } from '@ant-design/icons'
 import { Layout, Menu } from 'antd'
 import React from 'react'
 import { BrowserRouter as Router, Link, Route } from 'react-router-dom'
