@@ -1,8 +1,0 @@
-#!/bin/sh
-
-set -e
-
-COMMIT_SHA=$(git rev-parse --short master)
-RELEASE_TAG=$(date -u +%FT%Hh%Mm%Ss)_$COMMIT_SHA
-
-yarn run gh-pages -d build -g release/$RELEASE_TAG -m "Deploy From Commit: $COMMIT_SHA"
