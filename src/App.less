@@ -10,17 +10,20 @@
   width: 100%;
   line-height: @layout-header-height;
   height: @layout-header-height + 2;
+
+  .ant-menu {
+    padding-left: 16vw;
+  }
+  
+  .ant-menu-item {
+    margin-right: @padding-lg;
+    margin-left: @padding-lg;
+  }
 }
 
 .App-logo {
-  width: 12%;
-  margin: 0 @padding-lg;
+  width: 6rem;
   float: left;
-  font-size: @heading-3-size;
-
-  a {
-    color: @secondary-color;
-  }
 }
 
 .App-header-menu {
@@ -28,7 +31,6 @@
   border-bottom: none;
   font-weight: 700;
   font-size: @font-size-lg;
-  text-transform: uppercase;
 }
 
 .App-content-wrapper {

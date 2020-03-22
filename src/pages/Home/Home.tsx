@@ -4,7 +4,10 @@ import './Home.less'
 
 
 const Home = () => (
-  <Card title='Wir für Uns' />
+  <div>
+    <h1>#Wirfüruns!</h1>
+    <h1>Spread kindness - not the virus</h1>
+  </div>
 )
 
 export default Home
