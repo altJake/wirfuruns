@@ -29,7 +29,7 @@ const App = () => {
             onSelect={({ key }) => { setSelectedKeys([key]) }}
           >
             <Menu.Item key='aktiv_werden'><span>Aktiv Werden</span><Link to='/aktiv_werden' /></Menu.Item>
-            <Menu.Item key='die_idee'><span>Über Uns</span><Link to='/die_idee' /></Menu.Item>
+            <Menu.Item key='die_idee'><span>Die Idee</span><Link to='/die_idee' /></Menu.Item>
             <Menu.Item key='inspiration'><span>Inspiration</span><Link to='/inspiration' /></Menu.Item>
             <Menu.Item key='initiativen'><span>Alle Initiativen</span><Link to='/initiativen' /></Menu.Item>
             <Menu.Item key='hilfe_suchen' style={{ float: 'right' }}><span>Hilfe Suchen</span><Link to='/hilfe_suchen' /></Menu.Item>

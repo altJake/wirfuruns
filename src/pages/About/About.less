@@ -1,1 +1,40 @@
 @import '../../theme.less';
+
+.about-page {
+  margin: auto;
+  width: 54vw;
+  text-align: center;
+  font-family: 'Caveat Brush', cursive;
+  font-size: @font-size-base * 1.5;
+  color: @white;
+
+  .highlight {
+    color: @secondary-color;
+  }
+
+  .title {
+    .highlight;
+    font-size: @font-size-base * 3.5;
+    padding: 0;
+    margin-bottom: @padding-sm;
+  }
+
+  .subtitle {
+    color: @white;
+    font-size: @font-size-base * 3;
+    padding: 0;
+    margin-bottom: @padding-sm;
+  }
+
+  .button-link {
+    width: @padding-lg * 11;
+    font-family: @font-family;
+    color: @white;
+    background-color: @secondary-color;
+    border: none;
+
+    &:hover {
+      background-color: @primary-variant-color;
+    }
+  }
+}
