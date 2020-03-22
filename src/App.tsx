@@ -14,7 +14,7 @@ const App = () => {
   const [selectedKeys, setSelectedKeys] = React.useState<string[]>()
 
   return (
-    <Router basename='wirfuruns'>
+    <Router>
       <Layout className='App-wrapper'>
         <Header className='App-header'>
           <div className='App-logo'>
